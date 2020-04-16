@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <header id="main-header">
+        <h1>Benvenuto su Activity Planner</h1>
+    </header>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header id="main-header">
+
+        <img class="logo" src="../images/logo.png" alt="logo">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="mainPage.html">Home</a></li>
+                <li><a href="activityPage.html">Attività</a></li>
+                <li><a id="current-page" href="timerPage.html">Focus</a></li>
+                <li><a href="articlesPage.html">Articoli</a></li>
+                <li><a href="contactsPage.html">Contatti</a></li>
+                <li><a href="#">Tema</a>
+                    <ul>
+                        <li>Chiaro</li>
+                        <li>Scuro</li>
+                    </ul>
+                </li>
+                <li><a href="#">Lingua</a>
+                    <ul>
+                        <li>Italiano</li>
+                        <li>Inglese</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="usr-btn-box">
+            <a href="loginPage.html">
+                <i1 class="fas fa-user-circle"></i1>
+            </a>
+        </div>
+
+    </header>
+
+    <div class="login-registration">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-button" onclick="login()">Log in</button>
+                <button type="button" class="toggle-button" onclick="register()">Registrati</button>
+            </div>
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="Nome utente" required>
+                <input type="password" class="input-field" placeholder="Password" required>
+                <input type="checkbox" class="check-box"><span class="deg">Ricorda password </span>
+                <button type="submit" class="submit-btn">Continua</button>
+            </form>
+            <form id="register" class="input-group">
+                <input type="email" class="input-field" placeholder="Email" required>
+                <input type="text" class="input-field" placeholder="Nome utente" required>
+                <input type="password" class="input-field" placeholder="Password" required>
+                <input type="checkbox" class="check-box"><span class="deg">Accetto Termini e Condizioni </span>
+                <button type="submit" class="submit-btn">Registrati</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function register() {
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+
+        function login() {
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0";
+        }
+    </script>
+</body>
+
+</html>

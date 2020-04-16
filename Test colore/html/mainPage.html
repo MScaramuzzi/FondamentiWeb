@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Main Page</title>
+    <script src="https://kit.fontawesome.com/fd0149b301.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+<body class="dark" onload="renderDate()">
+
+
+    <header id="main-header">
+
+        <img class="logo" src="../images/logo.png" alt="logo">
+        <nav>
+            <ul class="nav_links">
+                <li><a id="current-page" href="#">Home</a></li>
+                <li><a href="aboutusPage.html">Chi siamo</a></li>
+                <li><a href="contactsPage.html">Contattaci</a></li>
+                <li><a href="activityPage.html">Attività</a></li>
+                <li><a href="timerPage.html">Focus</a></li>
+                <li><a href="#">Tema</a>
+                    <ul>
+                        <li>Chiaro</li>
+                        <li>Scuro</li>
+                    </ul>
+                </li>
+                <li><a href="#">Lingua</a>
+                    <ul>
+                        <li>Italiano</li>
+                        <li>Inglese</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="usr-btn-box">
+            <a href="loginPage.html">
+                <i1 class="fas fa-user-circle"></i1>
+            </a>
+        </div>
+
+    </header>
+
+
+
+
+
+
+    <div class="contenitorone">
+        <div class="wrapper">
+            <div class="calendar">
+                <div class="month">
+                    <div class="prev" onclick="moveDate('prev')">
+                        <span>&#10094;</span>
+                    </div>
+                    <div>
+                        <h2 id="month"></h2>
+                        <p id="date_str"></p>
+                    </div>
+                    <div class="next" onclick="moveDate('next')">
+                        <span>&#10095;</span>
+                    </div>
+                </div>
+                <div class="weekdays">
+                    <div>Dom</div>
+                    <div>Lun</div>
+                    <div>Mar</div>
+                    <div>Mer</div>
+                    <div>Gio</div>
+                    <div>Ven</div>
+                    <div>Sab</div>
+                </div>
+                <div class="days">
+
+                </div>
+            </div>
+            <!--sezione articoli-->
+
+            <div class="articolo">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac auctor velit. Mauris vel velit quis tortor finibus aliquet. Suspendisse sed lacus aliquet ligula vulputate elementum. Donec non sem facilisis, posuere quam elementum,
+                    consequat arcu. Morbi id neque ipsum. Donec pretium, ipsum et interdum consequat, sapien mauris consectetur felis, nec hendrerit dolor risus vulputate tortor. Mauris sagittis gravida ante id fringilla. Etiam porta quam dapibus tortor
+                    pellentesque eleifend.
+                </p>
+            </div>
+
+
+            <div class="articolo">
+                <p>Pellentesque vehicula vulputate metus, quis placerat ex volutpat vel. Sed tincidunt metus et ullamcorper lobortis. Nam blandit iaculis semper. Praesent non metus diam. Pellentesque suscipit, nulla suscipit venenatis pulvinar, ligula lectus
+                    ullamcorper elit, ut pretium libero nulla sit amet arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam arcu est, maximus a ipsum in, cursus tristique purus. Donec non tempus nisi. Quisque
+                    tincidunt turpis eget justo porta sagittis. Morbi sit amet magna accumsan, viverra lacus quis, eleifend purus. Pellentesque dignissim nibh at augue facilisis, sed porta felis lacinia. Nullam lacinia eu nisi vitae ultricies. .
+                </p>
+            </div>
+            <!-- fine sezione articoli-->
+        </div>
+        <script>
+            var dt = new Date();
+
+            function renderDate() {
+                dt.setDate(1);
+                var day = dt.getDay();
+                var today = new Date();
+                var endDate = new Date(
+                    dt.getFullYear(),
+                    dt.getMonth() + 1,
+                    0
+                ).getDate();
+
+                var prevDate = new Date(
+                    dt.getFullYear(),
+                    dt.getMonth(),
+                    0
+                ).getDate();
+                var months = [
+                    "Gennaio",
+                    "Febbraio",
+                    "Marzo",
+                    "Aprile",
+                    "Maggio",
+                    "Giugno",
+                    "Luglio",
+                    "Agosto",
+                    "Settembre",
+                    "Ottobre",
+                    "Novembre",
+                    "Dicembre"
+                ]
+                document.getElementById("month").innerHTML = months[dt.getMonth()];
+                document.getElementById("date_str").innerHTML = dt.toDateString();
+                var cells = "";
+                for (x = day; x > 0; x--) {
+                    cells += "<div class='prev_date'>" + (prevDate - x + 1) + "</div>";
+                }
+                console.log(day);
+                for (i = 1; i <= endDate; i++) {
+                    if (i == today.getDate() && dt.getMonth() == today.getMonth()) cells += "<div class='today'>" + i + "</div>";
+                    else
+                        cells += "<div>" + i + "</div>";
+                }
+                document.getElementsByClassName("days")[0].innerHTML = cells;
+
+            }
+
+            function moveDate(para) {
+                if (para == "prev") {
+                    dt.setMonth(dt.getMonth() - 1);
+                } else if (para == 'next') {
+                    dt.setMonth(dt.getMonth() + 1);
+                }
+                renderDate();
+            }
+        </script>
+
+
+
+    </div>
+
+
+</body>
+
+</html>
