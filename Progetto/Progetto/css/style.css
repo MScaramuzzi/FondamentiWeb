@@ -377,7 +377,7 @@ h1 {
 }
 
 .button-box{
-    width:220px;
+    width:222px;
     margin:35px auto;
     position: relative;
     box-shadow: 0 0 20px 9px #04028332;
@@ -399,7 +399,7 @@ h1 {
     top:0;
     left: 0;
     position: absolute;
-    width: 110px;
+    width: 112px;
     height: 100%;
     background: linear-gradient(to right,#e23f39,#eb7e7a) ;
     border-radius: 30px;
