@@ -1,36 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html Lang="en">
 
 <head>
     <title>Main Page</title>
     <script src="https://kit.fontawesome.com/fd0149b301.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <script src='../js/calendar.js'></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
 
 <body onload="renderDate()">
 
 
-    <header id="main-header">
+    <nav>
 
         <img class="logo" src="../images/logo1.png" alt="logo">
-        <nav>
-            <ul class="nav_links">
-                <li><a id="current-page" href="#">Home</a></li>
-                <li><a href="activityPage.html">Attività</a></li>
-                <li><a href="timerPage.html">Focus</a></li>
-                <li><a href="contactsPage.html">Contatti</a></li>
-                <li><a href="aboutUsPage.html">Chi siamo</a></li>
 
-            </ul>
-        </nav>
-        <div class="usr-btn-box">
-            <a href="loginPage.html">
-                <i id="user-button" class="fas fa-user-circle"></i>
-            </a>
+        <ul class="nav-links">
+            <li><a id="current-page" href="#">Home</a></li>
+            <li><a href="activityPage.html">Attività</a></li>
+            <li><a href="timerPage.html">Focus</a></li>
+            <li><a href="contactsPage.html">Contatti</a></li>
+            <li><a href="aboutUsPage.html">Chi siamo</a></li>
+            <li>
+                <div class="usr-btn-box">
+                    <a href="loginPage.html">
+                        <i id="user-button" class="fas fa-user-circle"></i>
+                    </a>
+                </div>
+            </li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
         </div>
+    </nav>
 
-    </header>
+
+
+
+
 
 
 
@@ -50,7 +60,7 @@
 
     <div class="page-wrapper">
 
-        <div class="wrapper">
+          <div class="wrapper">
             <div class="calendar">
                 <div class="month">
                     <div class="prev" onclick="moveDate('prev')">
@@ -79,7 +89,50 @@
             </div>
         </div>
 
+        <h1 class="art-title">Articoli bellissimi</h1>
+        <div class="articles">
+            
+            <div  class="articolo">
+                <h3>Titolo 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora, voluptatum quas facere dolorum
+                    aut cumque nihil nulla harum nemo distinctio quam blanditiis dignissimos.</p>
+                <button>Continua la lettura</button>    
+            </div>
+            <div  class="articolo">
+                <h3>Titolo 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora, voluptatum quas facere dolorum
+                    aut cumque nihil nulla harum nemo distinctio quam blanditiis dignissimos.</p>
+                <button>Continua la lettura</button>    
+            </div>
+            <div   class="articolo">
+                <h3>Titolo 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora, voluptatum quas facere dolorum
+                    aut cumque nihil nulla harum nemo distinctio quam blanditiis dignissimos.</p>
+                <button>Continua la lettura</button>    
+            </div>
+            <div  class="articolo">
+                <h3>Titolo  4</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora, voluptatum quas facere dolorum
+                    aut cumque nihil nulla harum nemo distinctio quam blanditiis dignissimos.</p>
+                <button>Continua la lettura</button>    
+            </div>
+            <div  class="articolo">
+                <h3>Titolo 5</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora, voluptatum quas facere dolorum
+                    aut cumque nihil nulla harum nemo distinctio quam blanditiis dignissimos.</p>
+                    <button>Continua la lettura</button>    
+            </div>
+            <div class="articolo">
+                <h3>Titolo 6</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora, voluptatum quas facere dolorum
+                    aut cumque nihil nulla harum nemo distinctio quam blanditiis dignissimos.</p>
+                <button>Continua la lettura</button>    
+            </div>
 
+
+        </div>
+
+    
     </div>
 
 
@@ -101,6 +154,7 @@
 
     </div>
     <script src='../js/calendar.js'></script>
+    <script src='../js/responsiveNav.js'></script>
 </body>
 
 </html>

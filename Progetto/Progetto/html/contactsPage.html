@@ -8,26 +8,30 @@
 </head>
 
 <body>
-    <header id="main-header">
+    <nav>
 
         <img class="logo" src="../images/logo1.png" alt="logo">
-        <nav>
-            <ul class="nav_links">
-                <li><a href="mainPage.html">Home</a></li>
-                <li><a href="activityPage.html">Attività</a></li>
-                <li><a href="timerPage.html">Focus</a></li>
-                <li><a id="current-page" href="contactsPage.html">Contatti</a></li>
-                <li><a href="aboutUsPage.html">Chi siamo</a></li>
 
-            </ul>
-        </nav>
-        <div class="usr-btn-box">
-            <a href="loginPage.html">
-                <i id="user-button"class="fas fa-user-circle"></i>
-            </a>
+        <ul class="nav-links">
+            <li><a href="mainPage.html">Home</a></li>
+            <li><a href="activityPage.html">Attività</a></li>
+            <li><a href="timerPage.html">Focus</a></li>
+            <li><a id="current-page"  href="#">Contatti</a></li>
+            <li><a href="aboutUsPage.html">Chi siamo</a></li>
+            <li>
+                <div class="usr-btn-box">
+                    <a href="loginPage.html">
+                        <i id="user-button" class="fas fa-user-circle"></i>
+                    </a>
+                </div>
+            </li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
         </div>
-
-    </header>
+    </nav>
 
     <div class="page-wrapper">
 
@@ -67,6 +71,8 @@
         </div>
 
     </div>
+
+    <script src='../js/responsiveNav.js'></script>
 </body>
 
 </html>
