@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/fd0149b301.js" crossorigin="anonymous"></script>
+    <title>Focus</title>
+</head>
+
+<body>
+
+    <header id="main-header">
+
+        <img class="logo" src="../images/logo1.png" alt="logo">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="mainPage.html">Home</a></li>
+                <li><a href="todoPage.html">Attività</a></li>
+                <li><a id="current-page" href="timerPage.html">Focus</a></li>
+                <li><a href="contactsPage.html">Contatti</a></li>
+                <li><a href="aboutUsPage.html">Chi siamo</a></li>
+
+            </ul>
+        </nav>
+        <div class="usr-btn-box">
+            <a href="loginPage.html">
+                <i id="user-button" class="fas fa-user-circle"></i>
+            </a>
+        </div>
+
+    </header>
+
+    <div class="page-wrapper">
+        <div class='main'>
+
+            <!-- header area -->
+            <div class='top'> <em>Concentrati!</em> </div>
+
+            <!-- body area -->
+            <div class='body'>
+                <!-- clock area -->
+                <div class='clock'>
+                    <div class='inner'>
+                        <div class='outer'>
+                            <div class='title'>
+                                <i class="fa fa-minus-circle minus"></i>
+                                <span class='sessionName'>training session</span>
+                                <i class="fa fa-plus-circle add"></i>
+                            </div>
+                            <div class='timer'>25:00</div>
+                            <div class='btnAdd'>
+                                <i class="fa fa-play fa-3x play"></i>
+                                <i class="fa fa-pause fa-3x pause"></i>
+                                <i class="fa fa-stop fa-3x stop"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='audio'>
+
+                        <i class="fa fa-volume-off fa-2x"></i>
+                    </div>
+                </div>
+                <!-- clock area ends -->
+
+                <!-- button area -->
+                <div class=btnBreak>
+                    <div>Breaktime</div>
+                    <div class='breakMin'>
+                        <div>
+                            <i class="fa fa-minus-circle minusBrk"></i>
+                        </div>
+                        <div class='sample'>
+                            <i class='break'>5 min</i>
+                        </div>
+                        <div>
+                            <i class="fa fa-plus-circle addBrk"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- button area ends -->
+            </div>
+            <!-- body ends -->
+
+        </div>
+
+        <audio data-key='tik' src="../libs/tik.mp3"></audio>
+        <audio data-key='go' src="../libs/go.mp3"></audio>
+        <audio data-key='finish' src="../libs/finish.mp3"></audio>
+    </div>
+
+
+    <div class="footer-main">
+        <div class="middle">
+            <a class="botn" href="#">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a class="botn" href="#">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a class="botn" href="#">
+                <i class="fab fa-github"></i>
+            </a>
+
+            <a class="botn" href="#">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+        <!--
+      <div class="footer-social">
+          <ul>
+              <li><a href="#" target="blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#" target="blank"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#" target="blank"><i class="fa fa-google-plus"></i></a></li>
+              <li><a href="#" target="blank"><i class="fa fa-youtube"></i></a></li>
+          </ul>
+      </div>
+      -->
+        <div class="footer-text">
+            &copy; Copyright 2020 ActivityPlanner.am
+        </div>
+
+    </div>
+
+    <script src='../js/timer/variables.js'></script>
+    <script src='../js/timer/eventListeners.js'></script>
+    <script src='../js/timer/func.js'></script>
+</body>
+
+
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Main Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/fd0149b301.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <script src='../js/calendar.js'></script>
+</head>
+
+<body onload="renderDate()">
+
+
+    <header id="main-header">
+
+        <img class="logo" src="../images/logo1.png" alt="logo">
+        <nav>
+            <ul class="nav_links">
+                <li><a id="current-page" href="#">Home</a></li>
+                <li><a href="todoPage.html">Attività</a></li>
+                <li><a href="timerPage.html">Focus</a></li>
+                <li><a href="contactsPage.html">Contatti</a></li>
+                <li><a href="aboutUsPage.html">Chi siamo</a></li>
+
+            </ul>
+        </nav>
+        <div class="usr-btn-box">
+            <a href="loginPage.html">
+                <i id="user-button" class="fas fa-user-circle"></i>
+            </a>
+        </div>
+
+    </header>
+
+
+
+
+
+
+
+    <div class="page-wrapper">
+
+        <div class="wrapper">
+            <div class="calendar">
+                <div class="month">
+                    <div class="prev" onclick="moveDate('prev')">
+                        <span>&#10094;</span>
+                    </div>
+                    <div>
+                        <h2 id="month"></h2>
+                        <p id="date_str"></p>
+                    </div>
+                    <div class="next" onclick="moveDate('next')">
+                        <span>&#10095;</span>
+                    </div>
+                </div>
+                <div class="weekdays">
+                    <div>Dom</div>
+                    <div>Lun</div>
+                    <div>Mar</div>
+                    <div>Mer</div>
+                    <div>Gio</div>
+                    <div>Ven</div>
+                    <div>Sab</div>
+                </div>
+                <div class="days">
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <div class="footer-main">
+        <div class="middle">
+            <a class="botn" href="#">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a class="botn" href="#">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a class="botn" href="#">
+                <i class="fab fa-github"></i>
+            </a>
+
+            <a class="botn" href="#">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+        <!--
+        <div class="footer-social">
+            <ul>
+                <li><a href="#" target="blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#" target="blank"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#" target="blank"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#" target="blank"><i class="fa fa-youtube"></i></a></li>
+            </ul>
+        </div>
+        -->
+        <div class="footer-text">
+            &copy; Copyright 2020 ActivityPlanner.am
+        </div>
+
+    </div>
+    <script src='../js/calendar.js'></script>
+</body>
+
+</html>
