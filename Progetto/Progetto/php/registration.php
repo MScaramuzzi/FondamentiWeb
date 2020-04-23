@@ -20,7 +20,7 @@
       }else{
         $insert = "insert into users (id, username, email, password) value ('0', '$username', '$email', '$pass')";
         mysqli_query($con, $insert);
-        header('location: ../../index.html');
+        header('location: loginPage.php');
       }
 
       if($insert){
