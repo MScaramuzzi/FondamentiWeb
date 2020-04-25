@@ -53,7 +53,7 @@ nav{
    justify-content: space-around;
    display: flex;
    align-items: center;
-   color: white;
+   /*color: white;*/
    min-height: 8vh;
 }
 
@@ -130,9 +130,48 @@ nav{
  transition: all 0.3s ease;
 }
 
+/*@media screen and (max-width:1024px){
+  body{
+      overflow: hidden;
+  }
+  }
+  .nav-links{
+      width: 60%;
+  }*/
 
 
 
+@media screen and (max-width:768px){
+
+   
+
+ .nav-links{
+   position: absolute;
+   right:0px;
+   height:80vh;
+   top:11vh;
+   background-color:rgb(34, 34, 34);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width:50%;
+   transform: translateX(100%);
+   transition: transform 0.5s ease-in;
+   z-index:2 ;
+ }
+  
+ .nav-links li{
+   opacity:0;
+ }
+
+ .burger{
+   display: block;
+   
+ }
+ 
+
+
+}
 
 .nav-active{
   transform: translateX(0%);
@@ -292,7 +331,6 @@ nav{
     border-radius: 40px;
     height:60px;
   }
-
   .search-button{
       font-size: 20px;
       text-decoration: none;
@@ -307,7 +345,6 @@ nav{
       align-items: center;
       transition: 0.4s;
   }
-
   .search-txt{
       border: none;
       background: none;
@@ -320,12 +357,10 @@ nav{
       line-height: 40px;
       width:0px;
   }
-
   .search-box:hover> .search-txt{
       width:240px;
       padding: 0 6px;
   }
-
   .search-box:hover > .search-button{
     background-color:#a1c6f6;
 }
@@ -344,8 +379,6 @@ h1 {
 */
 /*FINE STILE GLOBALE*/
 
-
-
 /*INIZIO MAINPAGE*/
 
 .top-box{
@@ -355,7 +388,12 @@ h1 {
   justify-content: space-around;
   
 }
-
+@media screen and (max-width:768px){
+  .top-box{
+    flex-direction: column;
+    margin:auto;
+  }
+}
 
 /** INIZIO PRESENTAZIONE SITO */
 
@@ -419,7 +457,16 @@ h1 {
   
 }
 
+@media screen and (max-width:768px){
+.text{
+  font-size:40px;
+}
 
+  .desc{
+    margin:auto;
+    font-size:14px;
+  }
+}
 
 
 /**FINE PRESENTAZIONE SITO */
@@ -532,7 +579,16 @@ h1 {
     
 }
 
-
+@media screen and (max-width:768px){
+  .calendar {
+        width: 400px;
+   }
+   .wrapper{
+     width: 70%;
+    margin-bottom: 5%;
+    margin-left:8%;
+   }
+}
 
 
 
@@ -559,7 +615,14 @@ h1 {
   padding:5px;
   border:1px solid black;
 }
-
+@media screen and (max-width:768px){
+  .articolo-pomo{
+    flex-direction: column;
+    line-height: 1.6em;
+    width:90%;
+    margin: auto;
+  }
+}
 
 
 /*FINE ARTICOLO POMODORO*/
@@ -617,7 +680,23 @@ font-size: 18px;
   font-size:16px;
 }
 
+@media screen and (max-width:768px){
+  .articles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:2%;
+  }
 
+  .articolo{
+    width:90%;
+  }
+
+  .page-wrapper .art-title{
+        margin-top:110% ;
+        width: 60%;
+      }
+}
 /*FINE ARTICOLI*/
 
 
@@ -737,7 +816,12 @@ font-size: 18px;
     left:450px;
 }
 
-
+@media screen and (max-width:768px){
+  .welcome-text{
+    font-size:24px;
+    
+  }
+}
 
 /*FINE LOGIN AND REGISTRATION*/
 
@@ -926,7 +1010,57 @@ font-size: 18px;
   text-shadow: none;
 }
 
+@media screen and (max-width:375px){
+  .main{
+   margin-top: 20%;
+   width: 400px;
+   height:530px;
 
+  }
+  
+  .inner{
+    width:280px;
+    height: 280px;
+  }
+
+  .outer{
+    width:260px;
+    height: 260px;
+  }
+
+  .title{
+    font-size: 1em;
+    margin-top:70px
+  }
+
+  .timer{
+    
+    font-size: 3em;
+  }
+
+  .btnAdd{
+    margin-top: 25px;
+    font-size: 0.5em;
+  }
+
+  .btnAdd i{
+    margin:2px;
+  }
+
+  .audio{
+   width: 25px;
+   margin-right: 50px;
+   bottom:250px;
+  }
+
+  .btnBreak{
+    position: absolute;
+    bottom:50px;
+    margin-left: 90px;
+  }
+
+
+}
 
 
 
@@ -993,7 +1127,14 @@ font-size: 18px;
     border-radius: 10px;
   }
 
-  
+  @media screen and (max-width:768px){
+    .contact-form{
+      
+      margin-top: 50%;
+     
+  }
+  }
+
 
 /*FINE CONTATTACI*/
 
@@ -1263,169 +1404,3 @@ font-size: 18px;
 
 
 /* FINE TODOLST PAGE */
-
-
-
-/*INIZIO MEDIA QUERIES*/
-
-@media screen and (max-width:768px){
-  /*INIZIO MEDIA NAVBAR*/
- .nav-links{
-   position: absolute;
-   right:0px;
-   height:80vh;
-   top:11vh;
-   background-color:rgb(34, 34, 34);
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   width:50%;
-   transform: translateX(100%);
-   transition: transform 0.5s ease-in;
-   z-index:4 ;
- }
-  
- .nav-links li{
-   opacity:0;
- }
-
- .nav .usr-btn-box{
-   margin:auto;
- }
-
- .burger{
-   display: block;
-   
- }
-
- /*FINE MEDIA NAVBAR*/
-
-
-
-/*INIZIO MEDIA TOP BOX*/
-.top-box{
-  flex-direction: column;
-  margin:auto;
-}
-/*FINE MEDIA TOP BOX*/
-
-  /*INIZIO MEDIA PRESENTAZIONE SITO*/
-  .text{
-    font-size:40px;
-  }
-  
-    .desc{
-      margin:auto;
-      font-size:14px;
-    }
-    /*FINE MEDIA PRESENTAZIONE SITO*/
-
-   /*INIZIO MEDIA CONTATTACI*/
-   .contact-form{
-      
-    margin-top: 50%;
-   
-}
-/*FINE MEDIA CONTATTACI*/  
-
-/*INIZIO MEDIA TIMER*/
-.main{
-  margin-top: 20%;
-  width: 400px;
-  height:530px;
-
- }
- 
- .inner{
-   width:280px;
-   height: 280px;
- }
-
- .outer{
-   width:260px;
-   height: 260px;
- }
-
- .title{
-   font-size: 1em;
-   margin-top:70px
- }
-
- .timer{
-   
-   font-size: 3em;
- }
-
- .btnAdd{
-   margin-top: 25px;
-   font-size: 0.5em;
- }
-
- .btnAdd i{
-   margin:2px;
- }
-
- .audio{
-  width: 25px;
-  margin-right: 50px;
-  bottom:250px;
- }
-
- .btnBreak{
-   position: absolute;
-   bottom:50px;
-   margin-left: 90px;
- }
-/*FINE MEDIA TIMER*/
-
-/*INIZIO MEDIA LOGIN*/
-.welcome-text{
-  font-size:24px;
-  
-}
-/*FINE MEDIA LOGIN*/
-
- /*INIZIO MEDIA ARTICOLI*/
- .articles{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top:2%;
-}
-
-.articolo{
-  width:90%;
-}
-
-.page-wrapper .art-title{
-      margin-top:110% ;
-      width: 60%;
-    }
-    /*FINE MEDIA ARTICOLI*/
-
-
-  /*INIZIO MEDIA ARTICOLO POMODORO*/
-  .articolo-pomo{
-    flex-direction: column;
-    line-height: 1.6em;
-    width:90%;
-    margin: auto;
-  }
-
-  /*FINE MEDIA ARTICOLO POMODORO*/
-
-  /*INIZIO MEDIA CALENDARIO*/
-  .calendar {
-    width: 400px;
-}
-.wrapper{
- width: 70%;
-margin-bottom: 5%;
-margin-left:8%;
-}
-
-/*FINE MEDIA CALENDARIO*/
-
-/*FINE MEDIA QUERIES*/
-
-}
