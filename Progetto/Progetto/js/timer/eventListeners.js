@@ -1,53 +1,58 @@
+/** aggiungiamo gli eventListener per il click dell'utente
+ sui bottoni dell'interfaccia*/
 minusMin.addEventListener('click', lessMin)
 addMin.addEventListener('click', moreMin)
 minusBrk.addEventListener('click', lessBrk)
 addBrk.addEventListener('click', moreBrk)
 
-// lessen the value of the pamodoro when clicked
-function lessMin(){
-  if (initialTime == 1) return
-  initialTime--
-  initTime = initialTime
-  timer.innerHTML = `${initialTime < 10 ? '0'+initialTime : initialTime}:00`
+
+
+
+
+// riduci il valore della sessione di studio quando è cliccato il bottone meno
+function lessMin() {
+    if (initialTime == 1) return
+    initialTime--
+    initTime = initialTime
+    timer.innerHTML = `${initialTime < 10 ? '0'+initialTime : initialTime}:00`
 }
 
-// increase the value when plus is clicked
-function moreMin(){
-  if(initialTime == 90) return
-  initialTime++
-  initTime = initialTime
-  timer.innerHTML = `${initialTime < 10 ? '0'+initialTime : initialTime}:00`
+// aumenta il valore della sessione di studio quando è cliccato il bottone più
+function moreMin() {
+    if (initialTime == 90) return
+    initialTime++
+    initTime = initialTime
+    timer.innerHTML = `${initialTime < 10 ? '0'+initialTime : initialTime}:00`
 }
 
-// decrease the value when click
-function lessBrk(){
-  if(breakTime == 1) return
-  breakTime--
-  breaktimer = breakTime
-  brkTimer.innerText = `${breakTime} min`
+// riduci il valore della pausa quando è cliccato il bottone meno
+function lessBrk() {
+    if (breakTime == 1) return
+    breakTime--
+    breaktimer = breakTime
+    brkTimer.innerText = `${breakTime} min`
 }
 
-// increase the value when clicked
-function moreBrk(){
-  if (breakTime == 15) return
-  breakTime++
-  breaktimer = breakTime
-  brkTimer.innerText = `${breakTime} min`
+// aumenta il valore della pausa quando è cliccato il bottone più
+function moreBrk() {
+    if (breakTime == 15) return
+    breakTime++
+    breaktimer = breakTime
+    brkTimer.innerText = `${breakTime} min`
 }
 
-// remove button eventlisteners when pamodoro has started
+// rimuovi gli event listeners dei bottoni minuti quando è iniziata la sessione
 function removeWhenStart() {
-  minusMin.removeEventListener('click', lessMin)
-  addMin.removeEventListener('click', moreMin)
-  minusBrk.removeEventListener('click', lessBrk)
-  addBrk.removeEventListener('click', moreBrk)
+    minusMin.removeEventListener('click', lessMin)
+    addMin.removeEventListener('click', moreMin)
+    minusBrk.removeEventListener('click', lessBrk)
+    addBrk.removeEventListener('click', moreBrk)
 }
 
-// add the event listeners when pamodoro started
+// ****RIVEDI*** aggiungi gli event listener quando è iniziata la sessione 
 function addClickable() {
-  minusMin.addEventListener('click', lessMin)
-  addMin.addEventListener('click', moreMin)
-  minusBrk.addEventListener('click', lessBrk)
-  addBrk.addEventListener('click', moreBrk)
+    minusMin.addEventListener('click', lessMin)
+    addMin.addEventListener('click', moreMin)
+    minusBrk.addEventListener('click', lessBrk)
+    addBrk.addEventListener('click', moreBrk)
 }
-
