@@ -2,7 +2,7 @@
 const clear = document.querySelector(".clear");
 
 /** Rende la data più leggeibile trasformando  
- * la prima lettera di giorno e mese in maiuscolo */
+   la prima lettera del giorno e del mese corrente in maiuscolo */
 
 
 document.getElementById("date").style.textTransform = "capitalize";
@@ -12,9 +12,9 @@ const input = document.getElementById("input");
 const add = document.querySelector(".task");
 
 //  Nomi delle classi
-const CHECK = "fa-check-circle";
-const UNCHECK = "fa-circle-thin";
-const LINE_THROUGH = "lineThrough";
+const CHECK = "fa-check-circle"; //check effettuato (attività completata)
+const UNCHECK = "fa-circle-thin"; //check non effettuato (attività da completare)
+const LINE_THROUGH = "lineThrough"; //linea per sbarrare attività completata
 
 // Variabili
 let LIST, id;
@@ -49,7 +49,7 @@ clear.addEventListener("click", function() {
     location.reload();
 });
 
-//  Mostra data di oggi
+// Mostra data di oggi
 const options = { weekday: "short", month: "long", day: "numeric" };
 const today = new Date();
 
@@ -57,15 +57,14 @@ const today = new Date();
 dateElement.innerHTML = today.toLocaleDateString("it-IT", options);
 
 
-
-
-
+//aggiungi attività alla lista
 function addToDo(toDo, id, done, trash) {
 
     if (trash) { return; }
 
-    const DONE = done ? CHECK : UNCHECK;
-    const LINE = done ? LINE_THROUGH : "";
+
+    const DONE = done ? CHECK : UNCHECK; //se l'attività è completata si aggiunge la spunta
+    const LINE = done ? LINE_THROUGH : ""; //se l'attività è completata viene sbarrata
 
     const item = `<li class="item">
                     <i class="fa ${DONE} co" job="complete" id="${id}"></i>
@@ -74,19 +73,23 @@ function addToDo(toDo, id, done, trash) {
                   </li>
                 `;
 
+    //costante dove è definita la posizione in cui vanno aggiunte le attività alla lista
     const position = "beforeend";
 
+    /*si occupa di aggiungere le varie attività una sotto l'altra partendo dall'avere
+    in cima l'attività meno recentemente aggiunta e le attività più recenti a seguire*/
     list.insertAdjacentHTML(position, item);
 }
 
 // Aggiungi un elemento alla lista quando l'utente preme enter
-// il codice 13 è quello di enter
+// il codice 13 è specifico proprio del tasto enter 
 document.addEventListener("keyup", function(event) {
     if (event.keyCode == 13) {
         const toDo = input.value;
 
         //se l'input non è vuoto
         if (toDo) {
+            //in caso affermativo aggiunge l'attività alla lista
             addToDo(toDo, id, false, false);
 
             LIST.push({
@@ -99,12 +102,16 @@ document.addEventListener("keyup", function(event) {
             /* aggiungi item al localstorage (questo codice deve essere presente 
             in ogni punto del codice dove il vettore LIST è modificato) */
 
-            localStorage.setItem("TODO", JSON.stringify(LIST)); //vedi JSON.stringify
-            //spiega setItem
-
+            localStorage.setItem("TODO", JSON.stringify(LIST));
+            /*il metodo localStorage.setItem() quando passa il nome di una chiave e un valore, aggiunge questa chiave allo storage, 
+            oppure se la chiave esiste già aggiorna il valore della chiave stessa.*/
+            /*il metodo JSON.stringify converte un oggetto o un valore JavaScript in una stringa JSON, sostituendo facoltativamente i 
+            valori se viene specificata una funzione sostitutiva o facoltativamente includendo solo le 
+            proprietà specificate se viene specificato un array replacer.*/
 
             id++;
         }
+        //di conseguenza viene "pulito" l'input
         input.value = "";
     }
 });
@@ -122,7 +129,7 @@ add.addEventListener("click", function(event) {
             LIST.push({
                 name: toDo,
                 id: id,
-                done: false,
+                done: false, //attività non completata
                 trash: false
             });
 
