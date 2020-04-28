@@ -2,120 +2,149 @@
 <html lang="en">
 
 <head>
-  
-  
-  <link rel="stylesheet" href="../css/style.css">
-  <script src="https://kit.fontawesome.com/fd0149b301.js" crossorigin="anonymous"></script>
-  <title>Focus</title>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/style1.css">
+    <link rel="stylesheet" type="text/css" href="../css/media.css">
+    <script src="https://kit.fontawesome.com/fd0149b301.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Focus</title>
 </head>
 
 <body>
 
-  <nav>
+    <nav>
 
-    <img class="logo" src="../images/logo1.png" alt="logo">
+        <img class="logo" src="../images/logo1.png" alt="logo">
 
-    <ul class="nav-links">
-        <li><a href="mainPage.html">Home</a></li>
-        <li><a href="activityPage.html">Attività</a></li>
-        <li><a id="current-page"  href="#">Focus</a></li>
-        <li><a href="contactsPage.html">Contatti</a></li>
-        <li><a href="aboutUsPage.html">Chi siamo</a></li>
-        <li>
-            <div class="usr-btn-box">
-                <a href="loginPage.html">
-                    <i id="user-button" class="fas fa-user-circle"></i>
-                </a>
-            </div>
-        </li>
-    </ul>
-    <div class="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-    </div>
-</nav>
-
-  <div class="page-wrapper">
-    <div class='main'>
-    
-      <!-- header area -->
-      <div class='top'>Concentrati!</div>
-    
-      <!-- body area -->
-      <div class='body'>
-        <!-- clock area -->
-        <div class='clock'>
-          <div class='inner'>
-            <div class='outer'>
-              <div class='title'>
-                <i class="fa fa-minus-circle minus"></i>
-                <span class='sessionName'>training session</span>
-                <i class="fa fa-plus-circle add"></i>
-              </div>
-              <div class='timer'>25:00</div>
-              <div class='btnAdd'>
-                <i class="fa fa-play fa-3x play"></i>
-                <i class="fa fa-pause fa-3x pause"></i>
-                <i class="fa fa-stop fa-3x stop"></i>
-              </div>
-            </div>
-          </div>
-          <div class='audio'>
-    
-            <i class="fa fa-volume-off fa-2x"></i>
-          </div>
+        <ul class="nav-links">
+            <li><a href="mainPage.html">Home</a></li>
+            <li><a href="activityPage.html">Attività</a></li>
+            <li><a id="current-page" href="#">Focus</a></li>
+            <li><a href="contactsPage.html">Contatti</a></li>
+            <li><a href="aboutUsPage.html">Chi siamo</a></li>
+            <li>
+                <div class="usr-btn-box">
+                    <a href="loginPage.html">
+                        <i id="user-button" class="fas fa-user-circle"></i>
+                    </a>
+                </div>
+            </li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
         </div>
-        <!-- clock area ends -->
-    
-        <!-- button area -->
-        <div class=btnBreak>
-          <div>Breaktime</div>
-          <div class='breakMin'>
-            <div>
-              <i class="fa fa-minus-circle minusBrk"></i>
+    </nav>
+
+    <div class="page-wrapper">
+        <div class='main'>
+
+            <!-- header area -->
+            <div class='top'><em>Concentrati!</em></div>
+
+            <!-- body area -->
+            <div class='body'>
+                <!-- clock area -->
+                <div class='clock'>
+                    <div class='inner'>
+                        <div class='outer'>
+                            <div class='title'>
+                                <i class="fa fa-minus-circle minus"></i>
+                                <span class='sessionName'>Work Session</span>
+                                <i class="fa fa-plus-circle add"></i>
+                            </div>
+                            <div class='timer'>25:00</div>
+                            <div class='btnAdd'>
+                                <i class="fa fa-play fa-3x play"></i>
+                                <i class="fa fa-pause fa-3x pause"></i>
+                                <i class="fa fa-stop fa-3x stop"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='audio'>
+
+                        <i class="fa fa-volume-off fa-2x"></i>
+                    </div>
+                </div>
+                <!-- clock area ends -->
+
+                <!-- button area -->
+                <div class=btnBreak>
+                    <div>Breaktime</div>
+                    <div class='breakMin'>
+                        <div>
+                            <i class="fa fa-minus-circle minusBrk"></i>
+                        </div>
+                        <div class='sample'>
+                            <i class='break'>5 min</i>
+                        </div>
+                        <div>
+                            <i class="fa fa-plus-circle addBrk"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- button area ends -->
             </div>
-            <div class='sample'>
-              <i class='break'>5 min</i>
-            </div>
-            <div>
-              <i class="fa fa-plus-circle addBrk"></i>
-            </div>
-          </div>
+            <!-- body ends -->
+
         </div>
-        <!-- button area ends -->
-      </div>
-      <!-- body ends -->
-    
-    </div>
-    
-    <audio data-key='tik' src="../libs/tik.mp3"></audio>
-    <audio data-key='go' src="../libs/go.mp3"></audio>
-    <audio data-key='finish' src="../libs/finish.mp3"></audio>
-  </div>
 
-
-  <div class="footer-main">
-
-    <div class="footer-social">
-      <ul>
-        <li><a href="#" target="blank"><i class="fa fa-facebook"></i></a></li>
-        <li><a href="#" target="blank"><i class="fa fa-twitter"></i></a></li>
-        <li><a href="#" target="blank"><i class="fa fa-google-plus"></i></a></li>
-        <li><a href="#" target="blank"><i class="fa fa-youtube"></i></a></li>
-      </ul>
+        <audio data-key='tik' src="../libs/tik.mp3"></audio>
+        <audio data-key='go' src="../libs/go.mp3"></audio>
+        <audio data-key='finish' src="../libs/finish.mp3"></audio>
     </div>
 
-    <div class="footer-text">
-      <h6>&copy; Copyright 2020 HTML.am</h6>
+
+
+    <div class="footer-main">
+
+        <div class="footer-social">
+            <ul>
+                <li class="botn">
+                    <a href="#" target="blank">
+                        <i class="fas fa-envelope"></i> <i class="fas fa-envelope"></i></a>
+                </li>
+                <li class="botn"><a href="#" target="blank"><i class="fa fa-twitter"></i></a></li>
+                <li class="botn">
+                    <a href="#" target="blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="botn"><a href="#" target="blank"><i class="fa fa-youtube"></i></a></li>
+            </ul>
+        </div>
+
+
+        <div class="footer-text">
+            <div class="copyright"> &copy; ActivityPlanner 2020. All Rights Reserved.</div>
+            <!--todo falli impilare con flexbox su mobile-->
+            <ul class="list-inline">
+
+                <li class="list-inline-item">
+                    <a href="#">Help</a>
+                </li>
+
+                <li class="list-inline-item">
+                    <a href="#">Privacy</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#">Terms</a>
+                </li>
+
+
+            </ul>
+
+        </div>
+
     </div>
 
-  </div>
-
-  <script src='../js/timer/variables.js'></script>
-  <script src='../js/timer/eventListeners.js'></script>
-  <script src='../js/timer/func.js'></script>
-  <script src='../js/responsiveNav.js'></script>
+    <script src='../js/timer/variables.js'></script>
+    <script src='../js/timer/eventListeners.js'></script>
+    <script src='../js/timer/func.js'></script>
+    <script src='../js/responsiveNav.js'></script>
 </body>
 
 

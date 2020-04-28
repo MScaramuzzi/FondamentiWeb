@@ -1,5 +1,11 @@
 // Elementi della pagina che dovranno essere selezionati
 const clear = document.querySelector(".clear");
+
+/** Rende la data più leggeibile trasformando  
+ * la prima lettera di giorno e mese in maiuscolo */
+
+
+document.getElementById("date").style.textTransform = "capitalize";
 let dateElement = document.getElementById("date");
 const list = document.getElementById("list");
 const input = document.getElementById("input");
@@ -47,11 +53,11 @@ clear.addEventListener("click", function() {
 const options = { weekday: "short", month: "long", day: "numeric" };
 const today = new Date();
 
+
 dateElement.innerHTML = today.toLocaleDateString("it-IT", options);
 
 
-// Funzione aggiungi to do
-// spiega insertAdjacentHTML e object literal ''
+
 
 
 function addToDo(toDo, id, done, trash) {

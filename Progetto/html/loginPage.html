@@ -3,8 +3,12 @@
 
 <head>
     <title>Login</title>
+    <meta charset="UTF-8">
     <script src="https://kit.fontawesome.com/fd0149b301.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style1.css">
+    <link rel="stylesheet" type="text/css" href="../css/media.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
 
 <body>
@@ -15,16 +19,16 @@
 
     </header>
     <div class="page-wrapper">
-        
-            <h1 class="welcome-text">Prima di entrare nel sito effettua l'accesso</h1>
-        
+
+        <h1 class="welcome-text">Prima di entrare nel sito effettua l'accesso</h1>
+
 
         <div class="login-registration">
             <div class="form-box">
                 <div class="button-box">
                     <div id="btn"></div>
                     <button type="button" class="toggle-button" onclick="login()">Log in</button>
-                    <button type="button" class="toggle-button" onclick="register()">Regitrati</button>
+                    <button type="button" class="toggle-button" onclick="register()">Registrati</button>
                 </div>
                 <form id="login" class="input-group">
                     <input type="text" class="input-field" placeholder="Nome utente" required>
@@ -41,19 +45,46 @@
         </div>
     </div>
 
+
     <div class="footer-main">
 
         <div class="footer-social">
             <ul>
-                <li><a href="#" target="blank"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#" target="blank"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#" target="blank"><i class="fa fa-google-plus"></i></a></li>
-                <li><a href="#" target="blank"><i class="fa fa-youtube"></i></a></li>
+                <li class="botn">
+                    <a href="#" target="blank">
+                        <i class="fas fa-envelope"></i> <i class="fas fa-envelope"></i></a>
+                </li>
+                <li class="botn"><a href="#" target="blank"><i class="fa fa-twitter"></i></a></li>
+                <li class="botn">
+                    <a href="#" target="blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="botn"><a href="#" target="blank"><i class="fa fa-youtube"></i></a></li>
             </ul>
         </div>
 
+
         <div class="footer-text">
-            <h6>&copy; Copyright 2020 HTML.am</h6>
+            <div class="copyright"> &copy; ActivityPlanner 2020. All Rights Reserved.</div>
+
+            <!--todo falli impilare con flexbox su mobile-->
+            <ul class="list-inline">
+
+                <li class="list-inline-item">
+                    <a href="#">Help</a>
+                </li>
+
+                <li class="list-inline-item">
+                    <a href="#">Privacy</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#">Terms</a>
+                </li>
+
+
+            </ul>
+
         </div>
 
     </div>

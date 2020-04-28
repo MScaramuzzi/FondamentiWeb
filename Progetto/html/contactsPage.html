@@ -3,8 +3,12 @@
 
 <head>
     <title>Contatti</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style1.css">
+    <link rel="stylesheet" type="text/css" href="../css/media.css">
     <script src="https://kit.fontawesome.com/fd0149b301.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
 
 <body>
@@ -16,7 +20,7 @@
             <li><a href="mainPage.html">Home</a></li>
             <li><a href="activityPage.html">Attività</a></li>
             <li><a href="timerPage.html">Focus</a></li>
-            <li><a id="current-page"  href="#">Contatti</a></li>
+            <li><a id="current-page" href="#">Contatti</a></li>
             <li><a href="aboutUsPage.html">Chi siamo</a></li>
             <li>
                 <div class="usr-btn-box">
@@ -51,23 +55,49 @@
                 <label>Messaggio</label>
                 <textarea></textarea>
             </div>
-            <a class="btn-contact">Invia</a> 
-               </div>
+            <a class="btn-contact">Invia</a>
+        </div>
     </div>
+
 
     <div class="footer-main">
 
         <div class="footer-social">
             <ul>
-                <li><a href="#" target="blank"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#" target="blank"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#" target="blank"><i class="fa fa-google-plus"></i></a></li>
-                <li><a href="#" target="blank"><i class="fa fa-youtube"></i></a></li>
+                <li class="botn">
+                    <a href="#" target="blank">
+                        <i class="fas fa-envelope"></i> <i class="fas fa-envelope"></i></a>
+                </li>
+                <li class="botn"><a href="#" target="blank"><i class="fa fa-twitter"></i></a></li>
+                <li class="botn">
+                    <a href="#" target="blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="botn"><a href="#" target="blank"><i class="fa fa-youtube"></i></a></li>
             </ul>
         </div>
 
+
         <div class="footer-text">
-            <h6>&copy; Copyright 2020 HTML.am</h6>
+            <div class="copyright"> &copy; ActivityPlanner 2020. All Rights Reserved.</div>
+            <!--todo falli impilare con flexbox su mobile-->
+            <ul class="list-inline">
+
+                <li class="list-inline-item">
+                    <a href="#">Help</a>
+                </li>
+
+                <li class="list-inline-item">
+                    <a href="#">Privacy</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#">Terms</a>
+                </li>
+
+
+            </ul>
+
         </div>
 
     </div>
