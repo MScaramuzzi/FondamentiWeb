@@ -20,10 +20,10 @@ const LINE_THROUGH = "lineThrough"; //linea per sbarrare attività completata
 let LIST, id;
 
 // ottieni l'item dal local storage
-//spiega getItem
-let data = localStorage.getItem("TODO");
+//Il metodo getItem() restituisce il valore contenuto nella chiave passata a parametro (TODO).
+let data = localStorage.getItem("TODO"); //ripristina il vettore LIST
 
-// controlla che data non sia vuoto
+// controlla che la data non sia vuoto
 if (data) {
     LIST = JSON.parse(data);
     id = LIST.length; // setta l'id dell'elemento come ultimo della list
@@ -43,13 +43,12 @@ function loadList(array) {
 }
 
 //ripulisci local storage
-//spiega clear e reload,location
 clear.addEventListener("click", function() {
-    localStorage.clear();
-    location.reload();
+    localStorage.clear(); //cliccando l'icona il alto a destra (clear) si elimina i contento della To Do List
+    location.reload();//essendo stata eliminata la To Do List, ricaricando la pagina risult essere ancora vuota
 });
 
-// Mostra data di oggi
+// Mostra la data di oggi
 const options = { weekday: "short", month: "long", day: "numeric" };
 const today = new Date();
 
@@ -145,19 +144,23 @@ add.addEventListener("click", function(event) {
 
 
 // completa il to do item
-//spiega classlist e toggle
 function completeToDo(element) {
-    element.classList.toggle(CHECK);
-    element.classList.toggle(UNCHECK);
-    element.parentNode.querySelector(".text").classList.toggle(LINE_THROUGH);
+    /* La proprietà Element.classList di sola lettura restituisce una raccolta dinamica delle classi dell'elemento.
+    Con il metodo toggle si aggiunge o rimuove il valore della classe (se la classe esiste, la rimuove e 
+    restituisce false, altrimenti l'aggiunge e regsituisce true*/
+
+    element.classList.toggle(CHECK); //se il check è stato fatto allora rimuovilo
+    element.classList.toggle(UNCHECK);//se l'uncheck è impostato allora rimuovilo
+    element.parentNode.querySelector(".text").classList.toggle(LINE_THROUGH);//seleziona il testo dell'attività e a questa aggiunge una linea orizzontale
 
     LIST[element.id].done = LIST[element.id].done ? false : true;
 }
 
 // rimuovi to do item
-// spiega parentnode
+// parentNode è il genitore del nodo corrente. Il genitore di un elemento è un nodo Element
 function removeToDo(element) {
-    element.parentNode.parentNode.removeChild(element.parentNode);
+    element.parentNode.parentNode.removeChild(element.parentNode);//al click dell'iconda del cestino, elimina la riga contentenente la stringa 
+                                                                  //dell'attività (1° parentNode) e il box che la contiene (2°parentNode)
 
     LIST[element.id].trash = true;
 }
@@ -168,6 +171,8 @@ list.addEventListener("click", function(event) {
     const element = event.target; // ritorna l'elemento clickato all'interno della lista 
     const elementJob = element.attributes.job.value; // completa o elimina
 
+    //verifica se l'attività è completata e richiama la funzione completeToDo()
+    //altrimenti se l'attività è eliminata, allora si richiama la funzione removeToDo()
     if (elementJob == "complete") {
         completeToDo(element);
     } else if (elementJob == "delete") {
