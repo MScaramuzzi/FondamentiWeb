@@ -471,6 +471,10 @@ nav {
     box-shadow: 0 0 20px 9px #04028332;
 }
 
+.col-fancy-rule {
+    column-rule: 3px dotted hotpink;
+}
+
 .paragraph h4 {
     font-size: 2em;
     font-weight: 500;
@@ -971,11 +975,19 @@ nav {
     background: rgb(216, 216, 216);
 }
 
-.page-wrapper-about h1 {
-    font-family: 'Montserrat', cursive;
+.cont_h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.cont_h1 h1 {
+    background-color: #e23f39;
+    border-radius: 10px;
+    padding: 10px;
     font-size: 52px;
+    font-family: 'Montserrat', cursive;
     margin-bottom: 90px;
-    text-align: center;
+    color: whitesmoke
 }
 
 .team {
