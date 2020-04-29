@@ -18,7 +18,7 @@
       if($num == 1){
         header('location: ../html/mainPage.html');
       }else{
-        header('location: loginPage.php');
+        header('location: ../html/loginPage.html');
       }
     }
 ?>
