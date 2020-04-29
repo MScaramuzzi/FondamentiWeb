@@ -30,16 +30,16 @@
                     <button type="button" class="toggle-button" onclick="login()">Log in</button>
                     <button type="button" class="toggle-button" onclick="register()">Registrati</button>
                 </div>
-                <form id="login" class="input-group" action="../php/validation.php" method="post">
-                    <input type="text" class="input-field" placeholder="Nome utente" name="username" required>
-                    <input type="password" class="input-field" placeholder="Password" name="password" required>
-                    <button type="submit" class="submit-btn" name="login">Continua</button>
+                <form id="login" class="input-group">
+                    <input type="text" class="input-field" placeholder="Nome utente" required>
+                    <input type="password" class="input-field" placeholder="Password" required>
+                    <button type="submit" class="submit-btn">Continua</button>
                 </form>
-                <form id="register" class="input-group" action="../php/registration.php" method="post">
-                	<input type="text" class="input-field" placeholder="Nome utente" name="username" required>
-                    <input type="email" class="input-field" placeholder="Email" name="email" required>
-                    <input type="password" class="input-field" placeholder="Password" name="password" required>
-                    <button type="submit" class="submit-btn" name="register">Registrati</button>
+                <form id="register" class="input-group">
+                    <input type="email" class="input-field" placeholder="Email" required>
+                    <input type="text" class="input-field" placeholder="Nome utente" required>
+                    <input type="password" class="input-field" placeholder="Password" required>
+                    <button type="submit" class="submit-btn">Registrati</button>
                 </form>
             </div>
         </div>
@@ -51,12 +51,12 @@
         <div class="footer-social">
             <ul>
                 <li class="botn">
-                    <a href="#" target="blank">
+                    <a href="mailto:activityplanner2@gmail.com">
                         <i class="fas fa-envelope"></i> <i class="fas fa-envelope"></i></a>
                 </li>
                 <li class="botn"><a href="#" target="blank"><i class="fa fa-twitter"></i></a></li>
                 <li class="botn">
-                    <a href="#" target="blank">
+                    <a href="https://github.com/ActivityPlanner?tab=repositories">
                         <i class="fab fa-github"></i>
                     </a>
                 </li>
@@ -68,7 +68,6 @@
         <div class="footer-text">
             <div class="copyright"> &copy; ActivityPlanner 2020. All Rights Reserved.</div>
 
-            <!--todo falli impilare con flexbox su mobile-->
             <ul class="list-inline">
 
                 <li class="list-inline-item">
