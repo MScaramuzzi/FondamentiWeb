@@ -19,9 +19,9 @@
 
     </header>
     <div class="page-wrapper">
-
-        <h1 class="welcome-text">Prima di entrare nel sito effettua l'accesso</h1>
-
+        <div class="welcome-text">
+            <h1>Prima di entrare nel sito <u>effettua</u> l'accesso</h1>
+        </div>
 
         <div class="login-registration">
             <div class="form-box">
@@ -30,16 +30,16 @@
                     <button type="button" class="toggle-button" onclick="login()">Log in</button>
                     <button type="button" class="toggle-button" onclick="register()">Registrati</button>
                 </div>
-                <form id="login" class="input-group" action="../php/validation.php" method="post">
-                    <input type="text" class="input-field" placeholder="Nome utente" name="username" required>
-                    <input type="password" class="input-field" placeholder="Password" name="password" required>
-                    <button type="submit" class="submit-btn" name="login">Continua</button>
+                <form id="login" class="input-group">
+                    <input type="text" class="input-field" placeholder="Nome utente" required>
+                    <input type="password" class="input-field" placeholder="Password" required>
+                    <button type="submit" class="submit-btn">Continua</button>
                 </form>
-                <form id="register" class="input-group" action="../php/registration.php" method="post">
-                	<input type="text" class="input-field" placeholder="Nome utente" name="username" required>
-                    <input type="email" class="input-field" placeholder="Email" name="email" required>
-                    <input type="password" class="input-field" placeholder="Password" name="password" required>
-                    <button type="submit" class="submit-btn" name="register">Registrati</button>
+                <form id="register" class="input-group">
+                    <input type="email" class="input-field" placeholder="Email" required>
+                    <input type="text" class="input-field" placeholder="Nome utente" required>
+                    <input type="password" class="input-field" placeholder="Password" required>
+                    <button type="submit" class="submit-btn">Registrati</button>
                 </form>
             </div>
         </div>
@@ -88,8 +88,8 @@
 
     </div>
 
-    <script src='../js/login.js'></script>
-    <script src='../js/responsiveNav.js'></script>
+    <script defer src='../js/login.js'></script>
+    <script defer src='../js/responsiveNav.js'></script>
 </body>
 
 </html>
