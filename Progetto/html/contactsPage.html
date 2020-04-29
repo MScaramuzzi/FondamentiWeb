@@ -38,25 +38,31 @@
     </nav>
 
     <div class="page-wrapper">
-
+<form action="../php/contactus.php" method="post">
         <div class="contact-form">
             <h2>Esprimi un feedback</h2>
             <div class="txtb">
                 <label>Nome</label>
-                <input type="text" name="" value="" placeholder="Inserisci il tuo nome">
+                <input type="text" name="nome" placeholder="Inserisci il tuo nome" required>
             </div>
-
+			
+            <div class="txtb">
+                <label>Oggetto</label>
+                <input type="text" name="oggetto" placeholder="Inserisci il tuo nome" required>
+            </div>
+            
             <div class="txtb">
                 <label>Email</label>
-                <input type="text" name="" value="" placeholder="Inserisci la tua email">
+                <input type="email" name="email" placeholder="Inserisci la tua email" required>
             </div>
 
             <div class="txtb">
                 <label>Messaggio</label>
-                <textarea></textarea>
+                <textarea name="messaggio" placeholder="Inserisci il tuo messaggio di feedack"></textarea>
             </div>
-            <a class="btn-contact">Invia</a>
-        </div>
+            <button class="btn-contact" type="submit" name="submit">Invia feedback</a> 
+               </div>
+     </form>
     </div>
 
 
