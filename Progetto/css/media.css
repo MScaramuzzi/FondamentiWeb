@@ -175,7 +175,7 @@
         margin-top: 20%;
     }
     .page-wrapper-about h1 {
-        font-size: 36px;
+        font-size: 2.5rem;
     }
     /* /CONTACT E ABOUT*/
     /* TODOLIST */
@@ -462,6 +462,11 @@
     /* /ABOUT US */
     /* TODOLIST */
     /* TODOLIST */
+    /**ARTICOLO REINDIRIZZATO DA HOME */
+    .head h1 {
+        padding: 2%;
+    }
+    /**ARTICOLO REINDIRIZZATO DA HOME */
 }
 
 .nav-active {
@@ -616,6 +621,11 @@
     /* /ABOUT US */
     /* TODOLIST */
     /* TODOLIST */
+    /**ARTICOLO REINDIRIZZATO DA HOME */
+    .head h1 {
+        padding: 3%;
+    }
+    /**ARTICOLO REINDIRIZZATO DA HOME */
 }
 
 .nav-active {
@@ -776,6 +786,11 @@
     /* /ABOUT US */
     /* TODOLIST */
     /* TODOLIST */
+    /**ARTICOLO REINDIRIZZATO DA HOME */
+    .head h1 {
+        padding: 5%;
+    }
+    /**ARTICOLO REINDIRIZZATO DA HOME */
 }
 
 .nav-active {
@@ -930,6 +945,12 @@
     /* /ABOUT US */
     /* TODOLIST */
     /* TODOLIST */
+    /** ARTICOLO REINDIRIZZATO DA HOME */
+    .head h1 {
+        margin-top: 10%;
+        padding: 5%;
+    }
+    /** ARTICOLO REINDIRIZZATO DA HOME */
 }
 
 .nav-active {
