@@ -12,34 +12,36 @@
 </head>
 
 <body>
-    <nav>
-
-        <img class="logo" src="../images/logo1.png" alt="logo">
-
-        <ul class="nav-links">
-            <li><a href="mainPage.html">Home</a></li>
-            <li><a href="activityPage.html">Attività</a></li>
-            <li><a href="timerPage.html">Focus</a></li>
-            <li><a id="current-page" href="#">Contattaci</a></li>
-            <li><a href="aboutUsPage.html">Chi siamo</a></li>
-            <li>
-                <div class="usr-btn-box">
-                    <a href="loginPage.html">
-                        <i id="user-button" class="fas fa-user-circle"></i>
-                    </a>
-                </div>
-            </li>
-        </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-    </nav>
+   <header>
+        <nav>
+       
+            <img class="logo" src="../images/logo1.png" alt="logo">
+       
+            <ul class="nav-links">
+                <li><a href="mainPage.html">Home</a></li>
+                <li><a href="activityPage.html">Attività</a></li>
+                <li><a href="timerPage.html">Focus</a></li>
+                <li><a id="current-page" href="#">Contattaci</a></li>
+                <li><a href="aboutUsPage.html">Chi siamo</a></li>
+                <li>
+                    <div class="usr-btn-box">
+                        <a href="loginPage.html">
+                            <i id="user-button" class="fas fa-user-circle"></i>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+   </header>
 
     <div class="page-wrapper">
 
-        <div class="contact-form">
+        <main class="contact-form">
             <h2>Esprimi un feedback</h2>
             <div class="txtb">
                 <label>Nome</label>
@@ -56,16 +58,16 @@
                 <textarea></textarea>
             </div>
             <a class="btn-contact">Invia</a>
-        </div>
+        </main>
     </div>
 
 
-    <div class="footer-main">
+    <footer class="footer-main">
 
         <div class="footer-social">
             <ul>
                 <li class="botn">
-                    <a href="mailto:activityplanner2@gmail.com" >
+                    <a href="mailto:activityplanner2@gmail.com">
                         <i class="fas fa-envelope"></i> <i class="fas fa-envelope"></i></a>
                 </li>
                 <li class="botn"><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
@@ -79,21 +81,21 @@
         </div>
 
 
+        <div class="footer-text ">
+            <div class="copyright "> &copy; ActivityPlanner 2020. All Rights Reserved.</div>
 
-        <div class="footer-text">
-            <div class="copyright"> &copy; ActivityPlanner 2020. All Rights Reserved.</div>
             <!--todo falli impilare con flexbox su mobile-->
-            <ul class="list-inline">
+            <ul class="list-inline ">
 
-                <li class="list-inline-item">
-                    <a href="#">Help</a>
+                <li class="list-inline-item ">
+                    <a href="# ">Help</a>
                 </li>
 
-                <li class="list-inline-item">
-                    <a href="#">Privacy</a>
+                <li class="list-inline-item ">
+                    <a href="# ">Privacy</a>
                 </li>
-                <li class="list-inline-item">
-                    <a href="#">Terms</a>
+                <li class="list-inline-item ">
+                    <a href="# ">Terms</a>
                 </li>
 
 
@@ -101,7 +103,7 @@
 
         </div>
 
-    </div>
+    </footer>
 
     <script defer src='../js/responsiveNav.js'></script>
 </body>

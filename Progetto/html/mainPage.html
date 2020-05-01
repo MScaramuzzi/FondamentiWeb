@@ -18,30 +18,32 @@
 <body onload="renderDate()">
 
 
-    <nav>
-
-        <img class="logo" src="../images/logo1.png" alt="logo">
-
-        <ul class="nav-links">
-            <li><a id="current-page" href="#">Home</a></li>
-            <li><a href="activityPage.html">Attività</a></li>
-            <li><a href="timerPage.html">Focus</a></li>
-            <li><a href="contactsPage.html">Contattaci</a></li>
-            <li><a href="aboutUsPage.html">Chi siamo</a></li>
-            <li>
-                <div class="usr-btn-box">
-                    <a href="loginPage.html">
-                        <i id="user-button" class="fas fa-user-circle"></i>
-                    </a>
-                </div>
-            </li>
-        </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-    </nav>
+    <header>
+        <nav>
+        
+            <img class="logo" src="../images/logo1.png" alt="logo">
+        
+            <ul class="nav-links">
+                <li><a id="current-page" href="#">Home</a></li>
+                <li><a href="activityPage.html">Attività</a></li>
+                <li><a href="timerPage.html">Focus</a></li>
+                <li><a href="contactsPage.html">Contattaci</a></li>
+                <li><a href="aboutUsPage.html">Chi siamo</a></li>
+                <li>
+                    <div class="usr-btn-box">
+                        <a href="loginPage.html">
+                            <i id="user-button" class="fas fa-user-circle"></i>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
 
 
 
@@ -56,7 +58,7 @@
 
     <div class="page-wrapper">
 
-        <div class="cont">
+        <section class="cont">
 
             <!--scritta a comparsa -->
             <div class="text middle">
@@ -82,14 +84,14 @@
                 <h3>Un timer per le tue sessioni di lavoro e una todolist interattiva.</h3>
             </div>
 
-        </div>
+        </section>
 
 
 
 
-        <div class="top-box">
+        <main class="top-box">
             <div class="wrapper">
-                <div class="calendar">
+                <section class="calendar">
                     <div class="month">
                         <div class="prev" onclick="moveDate('prev')">
                             <span>&#10094;</span>
@@ -114,10 +116,10 @@
                     <div class="days">
 
                     </div>
-                </div>
+                </section>
             </div>
 
-            <div class="articolo-pomo ">
+            <article class="articolo-pomo ">
                 <div class="pomo-title">
                     <h3>La Pomodoro Tecnique</h3>
                 </div>
@@ -144,47 +146,47 @@
                     </div>
 
                 </div>
-            </div>
-        </div>
+            </article>
+        </main>
         <div class="box-title">
             <h1 class="art-title ">Articoli per migliorarti </h1>
 
         </div>
 
-        <div class="articles ">
-            <div class="articolo ">
+        <section class="articles ">
+            <article class="articolo ">
                 <h3>Titolo 1</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora, voluptatum quas facere dolorum aut cumque nihil nulla harum nemo distinctio quam blanditiis dignissimos.</p>
                 <button><a href="articolo.html ">Continua la lettura </a></button>
-            </div>
-            <div class="articolo ">
+            </article>
+            <article class="articolo ">
                 <h3>Titolo 2</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora, voluptatum quas facere dolorum aut cumque nihil nulla harum nemo distinctio quam blanditiis dignissimos.</p>
                 <button><a href="articolo.html ">Continua la lettura </a></button>
-            </div>
-            <div class="articolo ">
+            </article>
+            <article class="articolo ">
                 <h3>Titolo 3</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora, voluptatum quas facere dolorum aut cumque nihil nulla harum nemo distinctio quam blanditiis dignissimos.</p>
                 <button><a href="articolo.html ">Continua la lettura </a></button>
-            </div>
-            <div class="articolo ">
+            </article>
+            <article class="articolo ">
                 <h3>Titolo 4</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora, voluptatum quas facere dolorum aut cumque nihil nulla harum nemo distinctio quam blanditiis dignissimos.</p>
                 <button><a href="articolo.html ">Continua la lettura </a></button>
-            </div>
-            <div class="articolo ">
+            </article>
+            <article class="articolo ">
                 <h3>Titolo 5</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora, voluptatum quas facere dolorum aut cumque nihil nulla harum nemo distinctio quam blanditiis dignissimos.</p>
                 <button><a href="articolo.html ">Continua la lettura </a></button>
-            </div>
-            <div class="articolo ">
+            </article>
+            <article class="articolo ">
                 <h3>Titolo 6</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora, voluptatum quas facere dolorum aut cumque nihil nulla harum nemo distinctio quam blanditiis dignissimos.</p>
                 <button><a href="articolo.html ">Continua la lettura </a></button>
-            </div>
+            </article>
 
 
-        </div>
+        </section>
 
 
 
@@ -194,7 +196,7 @@
 
 
 
-    <div class="footer-main">
+    <footer class="footer-main">
 
         <div class="footer-social">
             <ul>
@@ -235,7 +237,7 @@
 
         </div>
 
-    </div>
+    </footer>
     <script defer src='../js/calendar.js'></script>
     <script defer src='../js/scroll.js'></script>
     <script defer src='../js/responsiveNav.js'></script>
