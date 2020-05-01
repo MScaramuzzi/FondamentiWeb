@@ -85,6 +85,9 @@ function regTime() {
     pomMin = min < 10 ? '0' + min : min
     pomSec = sec < 10 ? '0' + sec : sec
     timer.innerHTML = pomMin + ':' + pomSec
+
+    //colora il timer
+
     marker.style.background = `conic-gradient(#ff5722 ${sessionMarker}% , teal ${sessionMarker}% 100%)`
 
     // controlla se la sessione è finita
